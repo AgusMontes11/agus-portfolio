@@ -1,16 +1,12 @@
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 export default function Navbar() {
   return (
-    <nav
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        padding: "1.5rem 4rem",
-        borderBottom: "1px solid #1e293b",
-      }}
-    >
-      <strong>Agus Montes</strong>
+    <nav>
+      <Link to="/" className="logo">
+        Agus Montes
+      </Link>
       <div>
         <Link to="/">Home</Link>
         <Link to="/projects">Projects</Link>
